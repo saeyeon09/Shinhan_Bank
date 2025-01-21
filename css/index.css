@@ -142,7 +142,7 @@ em {
 .introHeader #global .util .introduce a {
   margin-right: 9px;
   font-size: 13px;
-  color: #777;
+  color: #666666;
   line-height: 1;
   border: 0 none;
   font-weight: 300;
@@ -170,7 +170,7 @@ em {
   padding: 0;
   /* 불필요한 여백 제거 */
 
-  color: #919191;
+  color: #666666;
   font-weight: 300;
 }
 
@@ -195,7 +195,7 @@ em {
   height: 22px;
   line-height: 23px;
   padding: 0;
-  border: 1px solid #b2b2b2;
+  border: 1px solid #c7c7c7;
   font-size: 14px;
   font-weight: bold;
   color: #195dae;
@@ -247,7 +247,7 @@ em {
   transition: 0.7s background-color ease;
   margin-top: 4px;
   margin-left: 20px;
-  box-shadow: 0px 3px 8px #9e9e9e;
+  box-shadow: 0px 3px 5px #9e9e9e;
 }
 
 .introHeader > #gnb > .wrapInner > .introGnb > li > ul {
@@ -410,14 +410,14 @@ div#main {
 
 .orangeBox {
   position: absolute;
-  top: 49.5%;
+  top: 48%;
   left: 2.5%;
 }
 
 .orangeBox .mainLink1,
 .orangeBox .mainLink2 {
   display: inline-block;
-  padding: 15px 24px;
+  padding: 14px 24px;
   border: 6px solid #ea8748;
   border-radius: 1px;
   font-size: 22px;
@@ -501,7 +501,7 @@ div#main {
 
 .menu3 {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 22%;
 }
 
@@ -541,6 +541,41 @@ div#main {
   font-weight: 400;
 }
 
+.quickLink {
+  position: absolute;
+  top: 415px;
+  left: 23px;
+  z-index: 10;
+}
+
+.quickLink li {
+  position: relative;
+  float: left;
+  margin-right: 21px;
+}
+
+.quickLink li a {
+  font-size: 15px;
+  color: #777777;
+  font-weight: 300;
+}
+.quickLink li a:hover {
+  text-decoration: underline;
+}
+.quickLink li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: -10px;
+  width: 1px;
+  height: 6px;
+  background: #7e7e7e;
+}
+
+.quickLink li:first-child:before {
+  display: none;
+}
 /*-----금융상품-----*/
 
 .introCont .smartCenter {
@@ -642,6 +677,10 @@ div#main {
   color: #555;
   padding-right: 10px;
   font-weight: 300;
+}
+
+#gen_impSvcUl > ul > li > a > span:hover {
+  text-decoration: underline;
 }
 
 .introCont .impService .impOpen {
@@ -828,6 +867,10 @@ div#main {
   margin-left: 17px;
   background: #aadaff;
   text-align: center;
+}
+
+.introCont .recomIn > ul li:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .introCont .recomIn > ul li .type {
